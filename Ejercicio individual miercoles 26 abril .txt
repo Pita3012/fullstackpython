@@ -1,0 +1,78 @@
+
+javierasanchez@MacBook-Pro-de-Javiera ~ % ~/Desktop/Trabajo git hub 
+$ git init (Se ingresa este comando para iniciar un repositorio local en nuestro computador)
+Initialized empty Git repository in C:/Users/gabri/Desktop/Trabajo git hub/.git/
+
+javierasanchez@MacBook-Pro-de-Javiera ~ % 4 ~/Desktop/Trabajo git hub (master)
+$ git status (Este comando nos permite ver el estado de nuestro repositorio, por ende si esta creado)
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+javierasanchez@MacBook-Pro-de-Javiera ~ %  ~/Desktop/Trabajo git hub (master)
+$ git status (Aplique este comando luego de agregar el archivo solicitado a la carperta creada y ver cual era la respuesta de Git, La respuesta se ha agregado un archivo a la carpeta pero no al repositorio)
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contenido.txt
+
+javierasanchez@MacBook-Pro-de-Javiera ~ % ~/Desktop/Trabajo git hub (master)
+$ git add contenido.txt (Con este comando agregamos el archivo de texto al repositorio) 
+
+javierasanchez@MacBook-Pro-de-Javiera ~ %  ~/Desktop/Trabajo git hub (master)
+$ git commit -m cambio (Con este comando, comentamos y confirmamos el cambio en el repostorio, en este caso fue agregar el archivo de texto)
+[master (root-commit) a808caf] cambio
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 contenido.txt
+
+javierasanchez@MacBook-Pro-de-Javiera ~ %  ~/Desktop/Trabajo git hub (master)
+$ git brain -M main (Con este comando le decimos a Git que queremos o trabajaremos en nuestra rama principal)
+git: 'brain' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+javierasanchez@MacBook-Pro-de-Javiera ~ % ~/Desktop/Trabajo git hub (master)
+$ git branch -M main
+
+javierasanchez@MacBook-Pro-de-Javiera ~ %  ~/Desktop/Trabajo git hub (main)
+$ git remote add origin https://github.com/Pita3012/Fullstackpython (En esta parte vinculamos nuestro repositorio local con nuestro repositorio remoto en GitHub)
+
+javierasanchez@MacBook-Pro-de-Javiera ~ % 4 ~/Desktop/Trabajo git hub (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 221 bytes | 221.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pita3012/fullstackoython.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+javierasanchez@MacBook-Pro-de-Javiera  ~/Desktop/Trabajo git hub (main)
+$ git add contenido.txt (Luego de hacer un cambio en nuestro archivo de texto volvemos a guardar en el repositorio el archivo con el cambio realizado)
+
+javierasanchez@MacBook-Pro-de-Javiera  ~/Desktop/Trabajo git hub (main)
+$ git commit -m actualizada (Comentamos y confirmamos el cambio del archivo a la version actualizada) 
+[main 003ceac] actualizada
+ 1 file changed, 1 insertion(+)
+
+javierasanchez@MacBook-Pro-de-Javiera 4 ~/Desktop/Trabajo git hub (main)
+$ git push -u origin main (Con este comando terminamos de sincronizar nuestros repositorios, subiendo nuestro archivo actualizado desde nuestro repositorio local a nuestro repositorio remoto, quedando la version actualizada con los cambios realizados) 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Pita3012/fullstackpython.git
+   a808caf..003ceac  main -> main
+branch 'main' set up to track 'origin/main'.
+
+javierasanchez@MacBook-Pro-de-Javiera  ~/Desktop/Trabajo git hub (main)
+
+$
+
+
